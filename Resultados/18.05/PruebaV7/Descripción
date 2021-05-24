@@ -1,0 +1,4 @@
+PRUEBA  D1291 16 threads
+Prueba para ver si los tiempos de la versión 7 funcionaban correctamente.
+Lo que hice fue comprobar si la variable iteración se reseteaba. 
+DUDA: ¿Medir media de todos los try o de media de las iteraciones de cada try?
