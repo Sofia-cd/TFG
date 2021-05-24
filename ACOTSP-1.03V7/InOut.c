@@ -957,7 +957,7 @@ void write_params( void )
 */
 {
     fprintf(stdout, "\nParameter-settings: \n\n");
-    fprintf_parameters (stdout);
+    fprintf_parameters (stdout); 
     fprintf(stdout, "\n");
 
   if (report) {
@@ -982,13 +982,20 @@ void write_date(){
 	fprintf(timeMeasurements_report,"%s\n", output);
 }
 
-void write_measures(double timeContructSolution, double timeLocalSearch){
+void write_measures(long int n_try, double timeContructSolution, double timeLocalSearch){
   if (timeMeasurements_report)
       write_date();
-      fprintf(timeMeasurements_report,"Media del tiempo que lleva construct_solutions %.10f seconds\n", timeContructSolution);
-      fprintf(timeMeasurements_report,"Media del tiempo que lleva local_search %.10f seconds\n", timeLocalSearch);
+      fprintf(timeMeasurements_report,"TRY: %ld , media del tiempo que lleva construct_solutions %.10f seconds\n", n_try, timeContructSolution);
+      fprintf(timeMeasurements_report,"TRY: %ld , media del tiempo que lleva local_search %.10f seconds\n", n_try, timeLocalSearch);
 }
 
+void write_measures_total_trys(double timeContructSolution, double timeLocalSearch){
+  if (timeMeasurements_report)
+      write_date();
+      fprintf(timeMeasurements_report,"---------------------TOTAL---------------------");
+      fprintf(timeMeasurements_report,"Construct_solutions %.10f seconds\n",timeContructSolution);
+      fprintf(timeMeasurements_report,"Local_search %.10f seconds\n",timeLocalSearch);
+}
 
 
 
