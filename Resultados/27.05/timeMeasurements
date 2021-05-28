@@ -1,0 +1,39 @@
+
+24/05/21 17:41:34
+TRY: 0 , media del tiempo que lleva construct_solutions 0.0029665999 seconds
+TRY: 0 , media del tiempo que lleva local_search 0.0050099322 seconds
+24/05/21 17:43:14
+TRY: 1 , media del tiempo que lleva construct_solutions 0.0037643255 seconds
+TRY: 1 , media del tiempo que lleva local_search 0.0047159495 seconds
+24/05/21 17:44:54
+TRY: 2 , media del tiempo que lleva construct_solutions 0.0040431419 seconds
+TRY: 2 , media del tiempo que lleva local_search 0.0047626837 seconds
+24/05/21 17:46:34
+TRY: 3 , media del tiempo que lleva construct_solutions 0.0039353498 seconds
+TRY: 3 , media del tiempo que lleva local_search 0.0046692122 seconds
+24/05/21 17:48:14
+TRY: 4 , media del tiempo que lleva construct_solutions 0.0040472659 seconds
+TRY: 4 , media del tiempo que lleva local_search 0.0050036622 seconds
+24/05/21 17:49:54
+TRY: 5 , media del tiempo que lleva construct_solutions 0.0040023082 seconds
+TRY: 5 , media del tiempo que lleva local_search 0.0049000504 seconds
+24/05/21 17:51:34
+TRY: 6 , media del tiempo que lleva construct_solutions 0.0041437821 seconds
+TRY: 6 , media del tiempo que lleva local_search 0.0050180941 seconds
+
+24/05/21 17:53:14
+TRY: 7 , media del tiempo que lleva construct_solutions 0.0040476231 seconds
+TRY: 7 , media del tiempo que lleva local_search 0.0048320206 seconds
+24/05/21 17:54:54
+TRY: 8 , media del tiempo que lleva construct_solutions 0.0037401055 seconds
+TRY: 8 , media del tiempo que lleva local_search 0.0040333095 seconds
+24/05/21 17:56:34
+.0000000000 seconds
+
+
+TRY: 9 , media del tiempo que lleva construct_solutions 0.0038359877 seconds
+TRY: 9 , media del tiempo que lleva local_search 0.0042311439 seconds
+24/05/21 17:56:34
+---------------------TOTAL---------------------Construct_solutions 0.0000000000 seconds
+Local_search 0.0000000000 seconds
+
