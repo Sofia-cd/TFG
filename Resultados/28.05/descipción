@@ -1,0 +1,6 @@
+#SBATCH -n 1
+#SBATCH -c 4
+export OMP_NUM_THREADS=16
+./acotsp -i d1291.tsp -v -t 100. -r 10 -o 50801
+
+
