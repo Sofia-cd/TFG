@@ -66,8 +66,7 @@
 #include "timer.h"
 #include "ls.h"
 
-double totalTimeConstruct_solutions;
-double totalTimeLocal_search;
+double totalTimeConstruct_solutions, totalTimeLocal_search, try_totalTimeConstruct_solutions, try_totalTimeLocal_search;
 
 
 long int termination_condition( void )
@@ -592,7 +591,7 @@ int main(int argc, char *argv[]) {
 	    construct_solutions();
 	    
 	    /* Medir tiempo que llevó la función construct_solutions y sumarlo al contador */
-	    totalTimeConstruct_solutions += (elapsed_time(REAL) - time1);
+	    try_totalTimeConstruct_solutions += (elapsed_time(REAL) - time1);
 
             time1=elapsed_time(REAL);
             
@@ -600,7 +599,7 @@ int main(int argc, char *argv[]) {
 		local_search();
 	    
 	    /* Medir tiempo que llevó la función local_search y sumarlo al contador */
-	    totalTimeLocal_search += (elapsed_time(REAL) - time1);
+	    try_totalTimeLocal_search += (elapsed_time(REAL) - time1);
 
 	    update_statistics();
 
@@ -611,11 +610,13 @@ int main(int argc, char *argv[]) {
 	    iteration++;
 	}
 	
-	printf("Media del tiempo try %ld que lleva construct_solutions %.10f seconds\n", n_try, totalTimeConstruct_solutions/iteration);
-    	printf("Media del tiempo try %ld que lleva local_search %.10f seconds\n", n_try, totalTimeLocal_search/iteration);
-    	write_measures(n_try, totalTimeConstruct_solutions/iteration, totalTimeLocal_search/iteration);
-    	totalTimeConstruct_solutions = 0;
-    	totalTimeLocal_search = 0;
+	printf("Media del tiempo try %ld que lleva construct_solutions %.10f seconds\n", n_try, try_totalTimeConstruct_solutions/iteration);
+    	printf("Media del tiempo try %ld que lleva local_search %.10f seconds\n", n_try, try_totalTimeLocal_search/iteration);
+    	write_measures(n_try, try_totalTimeConstruct_solutions/iteration, try_totalTimeLocal_search/iteration);
+    	totalTimeConstruct_solutions += try_totalTimeConstruct_solutions;
+    	totalTimeLocal_search += try_totalTimeLocal_search;
+    	try_totalTimeConstruct_solutions = 0;
+    	try_totalTimeLocal_search = 0;
 	exit_try(n_try);
     }
     	write_measures_total_trys(totalTimeConstruct_solutions/(iteration*n_try), totalTimeLocal_search/(iteration*n_try));

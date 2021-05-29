@@ -992,7 +992,7 @@ void write_measures(long int n_try, double timeContructSolution, double timeLoca
 void write_measures_total_trys(double timeContructSolution, double timeLocalSearch){
   if (timeMeasurements_report)
       write_date();
-      fprintf(timeMeasurements_report,"---------------------TOTAL---------------------");
+      fprintf(timeMeasurements_report,"---------------------TOTAL---------------------\n");
       fprintf(timeMeasurements_report,"Construct_solutions %.10f seconds\n",timeContructSolution);
       fprintf(timeMeasurements_report,"Local_search %.10f seconds\n",timeLocalSearch);
 }
