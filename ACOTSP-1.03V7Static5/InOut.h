@@ -140,4 +140,6 @@ double node_branching(double l);
 
 void write_params ( void );
 
-void write_measures(double timeContructSolution, double timeLocalSearch);
+void write_measures(long int n_try, double timeContructSolution, double timeLocalSearch);
+
+void write_measures_total_trys(double timeContructSolution, double timeLocalSearch);

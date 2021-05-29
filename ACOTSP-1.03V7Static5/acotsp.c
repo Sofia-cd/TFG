@@ -611,12 +611,18 @@ int main(int argc, char *argv[]) {
 	    iteration++;
 	}
 	
-
+	printf("Media del tiempo try %ld que lleva construct_solutions %.10f seconds\n", n_try, try_totalTimeConstruct_solutions/iteration);
+    	printf("Media del tiempo try %ld que lleva local_search %.10f seconds\n", n_try, try_totalTimeLocal_search/iteration);
+    	write_measures(n_try, try_totalTimeConstruct_solutions/iteration, try_totalTimeLocal_search/iteration);
+    	totalTimeConstruct_solutions += try_totalTimeConstruct_solutions;
+    	totalTimeLocal_search += try_totalTimeLocal_search;
+    	try_totalTimeConstruct_solutions = 0;
+    	try_totalTimeLocal_search = 0;
 	exit_try(n_try);
     }
-    printf("Media del tiempo que lleva construct_solutions %.10f seconds\n", totalTimeConstruct_solutions/iteration);
-    printf("Media del tiempo que lleva local_search %.10f seconds\n", totalTimeLocal_search/iteration);
-    write_measures(totalTimeConstruct_solutions/iteration, totalTimeLocal_search/iteration);
+
+    	write_measures_total_trys(totalTimeConstruct_solutions/(iteration*n_try), totalTimeLocal_search/(iteration*n_try));
+    	
     exit_program();
 
     free( instance.distance );
