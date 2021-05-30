@@ -610,6 +610,7 @@ int main(int argc, char *argv[]) {
 	    iteration++;
 	}
 	
+	exit_try(n_try);
 	printf("Media del tiempo try %ld que lleva construct_solutions %.10f seconds\n", n_try, try_totalTimeConstruct_solutions/iteration);
     	printf("Media del tiempo try %ld que lleva local_search %.10f seconds\n", n_try, try_totalTimeLocal_search/iteration);
     	write_measures(n_try, try_totalTimeConstruct_solutions/iteration, try_totalTimeLocal_search/iteration);
@@ -617,7 +618,7 @@ int main(int argc, char *argv[]) {
     	totalTimeLocal_search += try_totalTimeLocal_search;
     	try_totalTimeConstruct_solutions = 0;
     	try_totalTimeLocal_search = 0;
-	exit_try(n_try);
+	
     }
     	write_measures_total_trys(totalTimeConstruct_solutions/(iteration*n_try), totalTimeLocal_search/(iteration*n_try));
 
