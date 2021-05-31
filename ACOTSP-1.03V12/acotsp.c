@@ -626,9 +626,11 @@ int main(int argc, char *argv[]) {
 	
         write_mpi_report();
 	exit_try(n_try);
+	printf("Media del tiempo que lleva construct_solutions %.10f seconds\n", totalTimeConstruct_solutions/iteration);
+	printf("Media del tiempo que lleva local_search %.10f seconds\n", totalTimeLocal_search/iteration);
+	
     }
-    printf("Media del tiempo que lleva construct_solutions %.10f seconds\n", totalTimeConstruct_solutions/iteration);
-    printf("Media del tiempo que lleva local_search %.10f seconds\n", totalTimeLocal_search/iteration);
+
     write_measures(totalTimeConstruct_solutions/iteration, totalTimeLocal_search/iteration);
     exit_program();
 
