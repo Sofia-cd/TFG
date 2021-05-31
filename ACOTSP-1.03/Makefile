@@ -1,14 +1,15 @@
 # Makefile for ACOTSP
 VERSION=1.03
 
+CC=icc
 OPTIM_FLAGS=-O
-WARN_FLAGS=-Wall -ansi -pedantic
+WARN_FLAGS=-Wall -ansi -pedantic -parallel -qopenmp 
 CFLAGS=$(WARN_FLAGS) $(OPTIM_FLAGS)
 # To change the default timer implementation, uncomment the line below
 # or call 'make TIMER=unix'
-TIMER=dos
-#TIMER=unix
-LDLIBS=-lm
+#TIMER=dos
+TIMER=unix
+LDLIBS=-lm -qopenmp
 
 acotsp: acotsp.o TSP.o utilities.o ants.o InOut.o $(TIMER)_timer.o ls.o parse.o
 
