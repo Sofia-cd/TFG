@@ -1,0 +1,10 @@
+\chapter*{Resumen}
+
+Este Trabajo Fin de Grado tiene como objetivo estudiar la estructura b\'asica del algoritmo {\em Optimizaci\'on de Colonia de Hormigas (Ant Colony Optimization - ACO) }para evaluar la efectividad y eficiencia de diferentes estrategias de parelizaci\'on y su combinaci\'on. 
+Como banco de pruebas para evaluar las distintas propuestas paralelas se utiliz\'o el {\em  Problema del Viajante (Travel Salesman Problem \– TSP) }. Se escogi\'o {\em TSP } dado que  es uno de los problemas m\'as estudiados por la comunidad cient\'ifica debido a la gran cantidad de aplicaciones en el mundo real. 
+Para la paralelizaci\'on se han utilizado estrategias con memoria compartida, en las que se ha empleado la librer\'ia {\em OpenMP }, y estrategias con memoria distribuida, en las que se emple\'o el paso de mensajes y la librer\'ia MPI. Se utiliz\'o el profiler {\em GPROF} para identificar las secciones de c\'odigo que compensaba parelelizar con las sentencias de {\em OpenMP }. Partiendo de la versi\'on secuencial original, se fueron implementando las distintas propuestas paralelas y se fue analizando la ganacia obtenida. Esta evaluaci\'on se realiz\'o de manera exhaustiva con los problemas de la conocida librer\'ia TSPLIB en un cluster HPC. La versi\'on final propuesta es una paralelizaci\'on h\'ibrida MPI y OpenMP.
+En la implementaci\'on de las distintas versiones se han seguido principios y buenas pr\'aticas de diseño y desarrolllo software con la intenci\'on de conseguir, un c\'odigo f\'acil de entender, mantener y modificar.
+Se planific\'o el trabajo en Sprints haciendo uso del marco de desarrollo \'agil,{\em Scrum }.
+El c\'odigo de las distintas versiones junto con los resultados de las evaluaciones se encuentran disponibles bajo la licencia {\em GNU GENERAL PUBLIC LICENSE} en el repositorio Git: https://github.com/Sofia-cd/TFG;
+\section*{Palabras clave}
+Computaci\'on Grid, ...
