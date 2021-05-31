@@ -612,7 +612,7 @@ int main(int argc, char *argv[]) {
 	}
 	
 	printf("N Tours %d , %ld\n", n_tours >= max_tours, n_tours);
-	printf("Time %d, tiempo real:%ld, tiempo máximo:%ld\n", elapsed_time( REAL ) >= max_time, elapsed_time( REAL ), max_time);
+	printf("Time %d, tiempo real:%.2f, tiempo máximo:%.2f\n", elapsed_time( REAL ) >= max_time, elapsed_time( REAL ), max_time);
 	printf("Optimal %d \n", best_so_far_ant->tour_length <= optimal);
 	exit_try(n_try);
 	printf("Media del tiempo try %ld que lleva construct_solutions %.10f seconds\n", n_try, try_totalTimeConstruct_solutions/iteration);
