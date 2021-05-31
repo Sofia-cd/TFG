@@ -77,6 +77,9 @@ long int termination_condition( void )
       (SIDE)EFFECTS:  none
 */
 {
+  printf("N Tours %ld \n", n_tours >= max_tours);
+  printf("Time %ld \n", elapsed_time( REAL ) >= max_time);
+  printf("Optimal %ld \n", best_so_far_ant->tour_length <= optimal);
   return ( ((n_tours >= max_tours) && (elapsed_time( REAL ) >= max_time)) || 
 	  (best_so_far_ant->tour_length <= optimal)); 
 }
