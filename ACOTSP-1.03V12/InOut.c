@@ -287,7 +287,7 @@ void write_report( void )
       COMMENTS: none
 */
 {
-    printf("best %ld, iteration: %ld, time %.2f\n",best_so_far_ant->tour_length,iteration,elapsed_time( VIRTUAL));
+    printf("best %ld, iteration: %ld, time %.2f\n",best_so_far_ant->tour_length,iteration,elapsed_time( REAL ));
     if (comp_report) 
         fprintf(comp_report,
                 "best %ld\t iteration %ld\t tours %ld\t time %.3f\n",
@@ -604,13 +604,13 @@ void exit_try( long int ntry )
   if (report)
       fprintf(report, "Best: %ld\t Iterations: %6ld\t B-Fac %.5f\t Time %.2f\t Tot.time %.2f\n",
               best_so_far_ant->tour_length, found_best, found_branching,
-              time_used, elapsed_time( VIRTUAL ));
+              time_used, elapsed_time( REAL ));
   printf(" Best Solution was found after %ld iterations\n", found_best);
 
   best_in_try[ntry] = best_so_far_ant->tour_length;
   best_found_at[ntry] = found_best;
   time_best_found[ntry] = time_used;
-  time_total_run[ntry] = elapsed_time( VIRTUAL );
+  time_total_run[ntry] = elapsed_time( REAL );
   printf("\ntry %ld, Best %ld, found at iteration %ld, found at time %f\n",
          ntry, best_in_try[ntry], best_found_at[ntry], time_best_found[ntry]);
 
