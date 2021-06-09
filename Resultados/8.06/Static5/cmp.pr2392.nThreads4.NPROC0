@@ -1,0 +1,907 @@
+
+ACO algorithms for the TSP, v1.03
+
+Parameter-settings: 
+
+max_tries		 50
+max_tours		 0
+max_time		 1000.00
+seed		 1623228893
+optimum			 387500
+n_ants			 25
+nn_ants			 20
+alpha			 1.00
+beta			 2.00
+rho			 0.50
+q_0			 0.00
+elitist_ants		 25
+ras_ranks		 0
+ls_flag			 3
+nn_ls			 20
+dlb_flag		 1
+as_flag			 0
+eas_flag		 1
+ras_flag		 0
+mmas_flag		 0
+bwas_flag		 0
+acs_flag		 0
+
+begin problem pr2392.tsp
+seed 1623228893
+begin try 0 
+best 395705	 iteration 1	 tours 27	 time 0.324
+best 395039	 iteration 2	 tours 52	 time 0.352
+best 394673	 iteration 3	 tours 77	 time 0.378
+best 391636	 iteration 4	 tours 102	 time 0.405
+best 391410	 iteration 7	 tours 177	 time 0.484
+best 391341	 iteration 8	 tours 202	 time 0.509
+best 391216	 iteration 15	 tours 377	 time 0.692
+best 389522	 iteration 22	 tours 552	 time 0.870
+best 389475	 iteration 62	 tours 1552	 time 1.875
+best 389428	 iteration 258	 tours 6452	 time 6.777
+best 389193	 iteration 339	 tours 8477	 time 8.829
+best 389135	 iteration 1108	 tours 27702	 time 28.153
+best 388882	 iteration 1382	 tours 34552	 time 34.893
+best 388362	 iteration 1507	 tours 37677	 time 37.952
+best 388144	 iteration 3280	 tours 82002	 time 81.719
+best 387970	 iteration 4158	 tours 103952	 time 103.580
+best 387955	 iteration 4970	 tours 124252	 time 123.773
+best 387167	 iteration 5375	 tours 134377	 time 133.882
+end try 0
+
+seed 1273447828
+begin try 1 
+best 396117	 iteration 1	 tours 27	 time 0.326
+best 394987	 iteration 2	 tours 52	 time 0.353
+best 393972	 iteration 3	 tours 77	 time 0.379
+best 392966	 iteration 4	 tours 102	 time 0.405
+best 392503	 iteration 8	 tours 202	 time 0.509
+best 390546	 iteration 10	 tours 252	 time 0.559
+best 390293	 iteration 11	 tours 277	 time 0.586
+best 389758	 iteration 31	 tours 777	 time 1.084
+best 389443	 iteration 66	 tours 1652	 time 1.956
+best 388925	 iteration 79	 tours 1977	 time 2.278
+best 388822	 iteration 342	 tours 8552	 time 8.837
+best 387907	 iteration 467	 tours 11677	 time 11.970
+best 387889	 iteration 651	 tours 16277	 time 16.564
+best 387736	 iteration 796	 tours 19902	 time 20.182
+best 387596	 iteration 2415	 tours 60377	 time 60.543
+best 387443	 iteration 3408	 tours 85202	 time 85.224
+end try 1
+
+seed 1824004724
+begin try 2 
+best 398529	 iteration 1	 tours 27	 time 0.326
+best 394898	 iteration 2	 tours 52	 time 0.354
+best 393004	 iteration 3	 tours 77	 time 0.380
+best 391874	 iteration 4	 tours 102	 time 0.407
+best 391562	 iteration 10	 tours 252	 time 0.560
+best 391273	 iteration 12	 tours 302	 time 0.611
+best 390388	 iteration 32	 tours 802	 time 1.112
+best 389833	 iteration 45	 tours 1127	 time 1.434
+best 389073	 iteration 51	 tours 1277	 time 1.585
+best 388577	 iteration 62	 tours 1552	 time 1.859
+best 388202	 iteration 120	 tours 3002	 time 3.288
+best 388189	 iteration 1253	 tours 31327	 time 31.444
+best 388057	 iteration 1341	 tours 33527	 time 33.620
+best 387561	 iteration 1359	 tours 33977	 time 34.067
+best 387478	 iteration 5375	 tours 134377	 time 133.178
+end try 2
+
+seed 1413104984
+begin try 3 
+best 397686	 iteration 1	 tours 27	 time 0.328
+best 395398	 iteration 2	 tours 52	 time 0.354
+best 393500	 iteration 3	 tours 77	 time 0.380
+best 392548	 iteration 5	 tours 127	 time 0.432
+best 390682	 iteration 10	 tours 252	 time 0.558
+best 390215	 iteration 38	 tours 952	 time 1.250
+best 390160	 iteration 46	 tours 1152	 time 1.448
+best 389716	 iteration 81	 tours 2027	 time 2.308
+best 389591	 iteration 97	 tours 2427	 time 2.701
+best 388820	 iteration 133	 tours 3327	 time 3.589
+best 388472	 iteration 152	 tours 3802	 time 4.054
+best 388460	 iteration 223	 tours 5577	 time 5.794
+best 387927	 iteration 642	 tours 16052	 time 16.150
+best 387297	 iteration 1753	 tours 43827	 time 43.787
+end try 3
+
+seed 1959694424
+begin try 4 
+best 397040	 iteration 1	 tours 27	 time 0.326
+best 394289	 iteration 2	 tours 52	 time 0.353
+best 393555	 iteration 4	 tours 102	 time 0.405
+best 393126	 iteration 7	 tours 177	 time 0.481
+best 392176	 iteration 8	 tours 202	 time 0.507
+best 392004	 iteration 11	 tours 277	 time 0.582
+best 391217	 iteration 12	 tours 302	 time 0.608
+best 389607	 iteration 15	 tours 377	 time 0.685
+best 388856	 iteration 45	 tours 1127	 time 1.435
+best 388833	 iteration 121	 tours 3027	 time 3.317
+best 388630	 iteration 131	 tours 3277	 time 3.565
+best 388404	 iteration 369	 tours 9227	 time 9.685
+best 388355	 iteration 426	 tours 10652	 time 11.163
+best 388352	 iteration 1670	 tours 41752	 time 42.911
+best 387267	 iteration 2239	 tours 55977	 time 57.088
+end try 4
+
+seed 18134828
+begin try 5 
+best 394953	 iteration 1	 tours 27	 time 0.327
+best 393346	 iteration 2	 tours 52	 time 0.354
+best 392382	 iteration 5	 tours 127	 time 0.431
+best 391558	 iteration 11	 tours 277	 time 0.579
+best 391406	 iteration 17	 tours 427	 time 0.729
+best 390637	 iteration 19	 tours 477	 time 0.781
+best 389594	 iteration 32	 tours 802	 time 1.106
+best 389127	 iteration 54	 tours 1352	 time 1.650
+best 389103	 iteration 140	 tours 3502	 time 3.771
+best 388774	 iteration 208	 tours 5202	 time 5.445
+best 388009	 iteration 292	 tours 7302	 time 7.546
+best 388007	 iteration 1258	 tours 31452	 time 31.593
+best 387661	 iteration 2271	 tours 56777	 time 56.977
+best 387557	 iteration 2485	 tours 62127	 time 62.332
+best 387442	 iteration 4106	 tours 102652	 time 103.065
+end try 5
+
+seed 1832696821
+begin try 6 
+best 397448	 iteration 1	 tours 27	 time 0.328
+best 395699	 iteration 2	 tours 52	 time 0.355
+best 393261	 iteration 3	 tours 77	 time 0.382
+best 392974	 iteration 5	 tours 127	 time 0.434
+best 392177	 iteration 8	 tours 202	 time 0.512
+best 391826	 iteration 9	 tours 227	 time 0.537
+best 391643	 iteration 12	 tours 302	 time 0.614
+best 391178	 iteration 19	 tours 477	 time 0.791
+best 390322	 iteration 21	 tours 527	 time 0.842
+best 389944	 iteration 23	 tours 577	 time 0.893
+best 389691	 iteration 58	 tours 1452	 time 1.766
+best 389529	 iteration 134	 tours 3352	 time 3.666
+best 389372	 iteration 177	 tours 4427	 time 4.730
+best 388456	 iteration 235	 tours 5877	 time 6.181
+best 387738	 iteration 245	 tours 6127	 time 6.434
+best 387654	 iteration 2767	 tours 69177	 time 69.628
+best 387646	 iteration 7146	 tours 178652	 time 179.410
+best 386803	 iteration 8088	 tours 202202	 time 202.976
+end try 6
+
+seed 1989448098
+begin try 7 
+best 397548	 iteration 1	 tours 27	 time 0.324
+best 393985	 iteration 2	 tours 52	 time 0.351
+best 393172	 iteration 3	 tours 77	 time 0.377
+best 392371	 iteration 5	 tours 127	 time 0.429
+best 392054	 iteration 7	 tours 177	 time 0.480
+best 390997	 iteration 9	 tours 227	 time 0.531
+best 389819	 iteration 10	 tours 252	 time 0.557
+best 389743	 iteration 15	 tours 377	 time 0.683
+best 389206	 iteration 121	 tours 3027	 time 3.334
+best 389132	 iteration 144	 tours 3602	 time 3.907
+best 389012	 iteration 215	 tours 5377	 time 5.671
+best 388484	 iteration 433	 tours 10827	 time 11.122
+best 388321	 iteration 729	 tours 18227	 time 18.507
+best 387979	 iteration 829	 tours 20727	 time 21.009
+best 387860	 iteration 3075	 tours 76877	 time 77.192
+best 387772	 iteration 3476	 tours 86902	 time 87.218
+best 387325	 iteration 4718	 tours 117952	 time 117.784
+end try 7
+
+seed 793640663
+begin try 8 
+best 396647	 iteration 1	 tours 27	 time 0.324
+best 393366	 iteration 2	 tours 52	 time 0.351
+best 393203	 iteration 4	 tours 102	 time 0.402
+best 393154	 iteration 5	 tours 127	 time 0.428
+best 391921	 iteration 7	 tours 177	 time 0.478
+best 389956	 iteration 10	 tours 252	 time 0.553
+best 389713	 iteration 30	 tours 752	 time 1.043
+best 388798	 iteration 216	 tours 5402	 time 5.588
+best 388790	 iteration 366	 tours 9152	 time 9.297
+best 388779	 iteration 489	 tours 12227	 time 12.319
+best 388778	 iteration 540	 tours 13502	 time 13.572
+best 388681	 iteration 718	 tours 17952	 time 17.967
+best 388659	 iteration 734	 tours 18352	 time 18.362
+best 388353	 iteration 935	 tours 23377	 time 23.310
+best 388237	 iteration 1353	 tours 33827	 time 33.672
+best 387895	 iteration 2306	 tours 57652	 time 57.151
+best 387774	 iteration 2420	 tours 60502	 time 59.960
+best 387720	 iteration 2484	 tours 62102	 time 61.527
+best 387642	 iteration 2847	 tours 71177	 time 70.417
+best 386318	 iteration 3364	 tours 84102	 time 83.137
+end try 8
+
+seed 471617841
+begin try 9 
+best 397795	 iteration 1	 tours 27	 time 0.326
+best 396190	 iteration 2	 tours 52	 time 0.353
+best 393647	 iteration 3	 tours 77	 time 0.379
+best 393059	 iteration 4	 tours 102	 time 0.406
+best 392875	 iteration 5	 tours 127	 time 0.431
+best 390557	 iteration 6	 tours 152	 time 0.457
+best 389488	 iteration 35	 tours 877	 time 1.169
+best 388897	 iteration 216	 tours 5402	 time 5.619
+best 388380	 iteration 670	 tours 16752	 time 16.775
+best 388310	 iteration 862	 tours 21552	 time 21.479
+best 387633	 iteration 945	 tours 23627	 time 23.511
+best 387596	 iteration 3974	 tours 99352	 time 97.413
+best 387033	 iteration 5490	 tours 137252	 time 134.534
+end try 9
+
+seed 887654453
+begin try 10 
+best 397180	 iteration 1	 tours 27	 time 0.326
+best 394184	 iteration 2	 tours 52	 time 0.352
+best 394156	 iteration 3	 tours 77	 time 0.378
+best 393529	 iteration 4	 tours 102	 time 0.404
+best 392715	 iteration 5	 tours 127	 time 0.429
+best 391906	 iteration 8	 tours 202	 time 0.505
+best 391408	 iteration 11	 tours 277	 time 0.580
+best 390839	 iteration 25	 tours 627	 time 0.926
+best 390267	 iteration 46	 tours 1152	 time 1.437
+best 389613	 iteration 52	 tours 1302	 time 1.583
+best 388477	 iteration 149	 tours 3727	 time 3.933
+best 388278	 iteration 432	 tours 10802	 time 10.862
+best 387725	 iteration 1551	 tours 38777	 time 38.413
+best 387619	 iteration 8570	 tours 214252	 time 210.715
+best 387370	 iteration 9404	 tours 235102	 time 231.147
+end try 10
+
+seed 1026557002
+begin try 11 
+best 396684	 iteration 1	 tours 27	 time 0.326
+best 393385	 iteration 2	 tours 52	 time 0.353
+best 392773	 iteration 4	 tours 102	 time 0.405
+best 391915	 iteration 7	 tours 177	 time 0.481
+best 389409	 iteration 8	 tours 202	 time 0.506
+best 389370	 iteration 15	 tours 377	 time 0.681
+best 389340	 iteration 46	 tours 1152	 time 1.438
+best 388841	 iteration 114	 tours 2852	 time 3.091
+best 388779	 iteration 174	 tours 4352	 time 4.547
+best 388590	 iteration 386	 tours 9652	 time 9.717
+best 388392	 iteration 411	 tours 10277	 time 10.334
+best 387617	 iteration 499	 tours 12477	 time 12.500
+best 386798	 iteration 2250	 tours 56252	 time 55.384
+end try 11
+
+seed 226217896
+begin try 12 
+best 396852	 iteration 1	 tours 27	 time 0.327
+best 394379	 iteration 2	 tours 52	 time 0.354
+best 393960	 iteration 4	 tours 102	 time 0.405
+best 393606	 iteration 5	 tours 127	 time 0.431
+best 392845	 iteration 6	 tours 152	 time 0.456
+best 392560	 iteration 7	 tours 177	 time 0.481
+best 391467	 iteration 11	 tours 277	 time 0.581
+best 391102	 iteration 19	 tours 477	 time 0.778
+best 391032	 iteration 20	 tours 502	 time 0.803
+best 389964	 iteration 22	 tours 552	 time 0.853
+best 388981	 iteration 34	 tours 852	 time 1.145
+best 388895	 iteration 248	 tours 6202	 time 6.333
+best 388434	 iteration 262	 tours 6552	 time 6.672
+best 388375	 iteration 526	 tours 13152	 time 13.129
+best 388335	 iteration 1221	 tours 30527	 time 30.166
+best 386943	 iteration 1388	 tours 34702	 time 34.244
+end try 12
+
+seed 546841602
+begin try 13 
+best 395840	 iteration 1	 tours 27	 time 0.328
+best 395468	 iteration 2	 tours 52	 time 0.355
+best 392841	 iteration 3	 tours 77	 time 0.381
+best 391342	 iteration 7	 tours 177	 time 0.483
+best 390060	 iteration 22	 tours 552	 time 0.854
+best 388025	 iteration 39	 tours 977	 time 1.272
+best 386798	 iteration 192	 tours 4802	 time 4.985
+end try 13
+
+seed 619313306
+begin try 14 
+best 396620	 iteration 1	 tours 27	 time 0.329
+best 395072	 iteration 2	 tours 52	 time 0.356
+best 394107	 iteration 3	 tours 77	 time 0.382
+best 393408	 iteration 4	 tours 102	 time 0.408
+best 390548	 iteration 6	 tours 152	 time 0.460
+best 390437	 iteration 25	 tours 627	 time 0.929
+best 390170	 iteration 32	 tours 802	 time 1.102
+best 390063	 iteration 39	 tours 977	 time 1.274
+best 389179	 iteration 41	 tours 1027	 time 1.324
+best 389129	 iteration 78	 tours 1952	 time 2.226
+best 388230	 iteration 121	 tours 3027	 time 3.274
+best 388156	 iteration 165	 tours 4127	 time 4.342
+best 387978	 iteration 311	 tours 7777	 time 7.897
+best 387355	 iteration 752	 tours 18802	 time 18.644
+end try 14
+
+seed 1737965722
+begin try 15 
+best 397418	 iteration 1	 tours 27	 time 0.329
+best 395690	 iteration 2	 tours 52	 time 0.356
+best 392029	 iteration 3	 tours 77	 time 0.382
+best 391857	 iteration 9	 tours 227	 time 0.533
+best 391675	 iteration 10	 tours 252	 time 0.559
+best 389089	 iteration 25	 tours 627	 time 0.932
+best 388795	 iteration 234	 tours 5852	 time 6.040
+best 388454	 iteration 463	 tours 11577	 time 11.684
+best 388348	 iteration 466	 tours 11652	 time 11.759
+best 387676	 iteration 741	 tours 18527	 time 18.503
+best 387133	 iteration 1079	 tours 26977	 time 26.765
+end try 15
+
+seed 700155029
+begin try 16 
+best 395250	 iteration 1	 tours 27	 time 0.329
+best 393889	 iteration 2	 tours 52	 time 0.355
+best 392744	 iteration 3	 tours 77	 time 0.381
+best 391248	 iteration 4	 tours 102	 time 0.408
+best 390463	 iteration 23	 tours 577	 time 0.877
+best 390210	 iteration 25	 tours 627	 time 0.927
+best 389562	 iteration 33	 tours 827	 time 1.124
+best 389495	 iteration 47	 tours 1177	 time 1.467
+best 388964	 iteration 92	 tours 2302	 time 2.569
+best 388741	 iteration 324	 tours 8102	 time 8.230
+best 388501	 iteration 347	 tours 8677	 time 8.797
+best 387910	 iteration 466	 tours 11652	 time 11.717
+best 387595	 iteration 717	 tours 17927	 time 17.883
+best 387430	 iteration 974	 tours 24352	 time 24.190
+end try 16
+
+seed 1321923410
+begin try 17 
+best 397475	 iteration 1	 tours 27	 time 0.329
+best 394819	 iteration 2	 tours 52	 time 0.356
+best 394148	 iteration 3	 tours 77	 time 0.382
+best 393094	 iteration 5	 tours 127	 time 0.433
+best 392188	 iteration 6	 tours 152	 time 0.459
+best 392108	 iteration 13	 tours 327	 time 0.635
+best 390749	 iteration 15	 tours 377	 time 0.685
+best 390263	 iteration 16	 tours 402	 time 0.710
+best 389291	 iteration 34	 tours 852	 time 1.153
+best 388306	 iteration 55	 tours 1377	 time 1.666
+best 388300	 iteration 382	 tours 9552	 time 9.615
+best 387543	 iteration 1085	 tours 27127	 time 26.955
+best 386850	 iteration 1211	 tours 30277	 time 30.072
+end try 17
+
+seed 1572685079
+begin try 18 
+best 397240	 iteration 1	 tours 27	 time 0.329
+best 395979	 iteration 2	 tours 52	 time 0.355
+best 394024	 iteration 3	 tours 77	 time 0.381
+best 393957	 iteration 4	 tours 102	 time 0.407
+best 393861	 iteration 7	 tours 177	 time 0.483
+best 392926	 iteration 8	 tours 202	 time 0.512
+best 392237	 iteration 14	 tours 352	 time 0.662
+best 391419	 iteration 17	 tours 427	 time 0.738
+best 391321	 iteration 19	 tours 477	 time 0.788
+best 390904	 iteration 21	 tours 527	 time 0.838
+best 390748	 iteration 23	 tours 577	 time 0.888
+best 388741	 iteration 28	 tours 702	 time 1.012
+best 388528	 iteration 962	 tours 24052	 time 23.981
+best 388200	 iteration 1396	 tours 34902	 time 34.664
+best 387464	 iteration 1443	 tours 36077	 time 35.824
+end try 18
+
+seed 529270456
+begin try 19 
+best 397127	 iteration 1	 tours 27	 time 0.329
+best 394870	 iteration 2	 tours 52	 time 0.356
+best 393888	 iteration 4	 tours 102	 time 0.408
+best 390800	 iteration 5	 tours 127	 time 0.434
+best 390548	 iteration 10	 tours 252	 time 0.560
+best 389719	 iteration 52	 tours 1302	 time 1.592
+best 389421	 iteration 104	 tours 2602	 time 2.876
+best 388027	 iteration 117	 tours 2927	 time 3.196
+best 387449	 iteration 382	 tours 9552	 time 9.671
+end try 19
+
+seed 626919073
+begin try 20 
+best 397290	 iteration 1	 tours 27	 time 0.330
+best 395844	 iteration 2	 tours 52	 time 0.357
+best 394830	 iteration 3	 tours 77	 time 0.383
+best 392189	 iteration 4	 tours 102	 time 0.409
+best 390230	 iteration 13	 tours 327	 time 0.633
+best 389613	 iteration 38	 tours 952	 time 1.249
+best 389403	 iteration 109	 tours 2727	 time 2.985
+best 388642	 iteration 119	 tours 2977	 time 3.231
+best 388264	 iteration 427	 tours 10677	 time 10.759
+best 388253	 iteration 811	 tours 20277	 time 20.146
+best 387678	 iteration 843	 tours 21077	 time 20.925
+best 387078	 iteration 1543	 tours 38577	 time 38.091
+end try 20
+
+seed 535732338
+begin try 21 
+best 395441	 iteration 1	 tours 27	 time 0.329
+best 393564	 iteration 3	 tours 77	 time 0.381
+best 393506	 iteration 4	 tours 102	 time 0.407
+best 391616	 iteration 5	 tours 127	 time 0.432
+best 390966	 iteration 11	 tours 277	 time 0.582
+best 390735	 iteration 15	 tours 377	 time 0.683
+best 390683	 iteration 25	 tours 627	 time 0.931
+best 390376	 iteration 35	 tours 877	 time 1.177
+best 390246	 iteration 39	 tours 977	 time 1.276
+best 390190	 iteration 58	 tours 1452	 time 1.739
+best 390047	 iteration 81	 tours 2027	 time 2.299
+best 389771	 iteration 94	 tours 2352	 time 2.616
+best 389283	 iteration 118	 tours 2952	 time 3.200
+best 388629	 iteration 137	 tours 3427	 time 3.661
+best 388281	 iteration 265	 tours 6627	 time 6.791
+best 387514	 iteration 352	 tours 8802	 time 8.932
+best 387349	 iteration 5840	 tours 146002	 time 146.614
+end try 21
+
+seed 966878292
+begin try 22 
+best 398221	 iteration 1	 tours 27	 time 0.331
+best 395153	 iteration 2	 tours 52	 time 0.359
+best 393054	 iteration 3	 tours 77	 time 0.386
+best 392885	 iteration 7	 tours 177	 time 0.490
+best 391972	 iteration 8	 tours 202	 time 0.516
+best 391455	 iteration 11	 tours 277	 time 0.594
+best 390499	 iteration 16	 tours 402	 time 0.721
+best 390375	 iteration 30	 tours 752	 time 1.076
+best 389361	 iteration 34	 tours 852	 time 1.178
+best 389072	 iteration 43	 tours 1077	 time 1.405
+best 388740	 iteration 558	 tours 13952	 time 14.309
+best 387940	 iteration 690	 tours 17252	 time 17.570
+best 387493	 iteration 6481	 tours 162027	 time 163.180
+end try 22
+
+seed 295924850
+begin try 23 
+best 397048	 iteration 1	 tours 27	 time 0.328
+best 394219	 iteration 2	 tours 52	 time 0.355
+best 392264	 iteration 4	 tours 102	 time 0.408
+best 391178	 iteration 10	 tours 252	 time 0.562
+best 390650	 iteration 20	 tours 502	 time 0.816
+best 390061	 iteration 22	 tours 552	 time 0.868
+best 389901	 iteration 29	 tours 727	 time 1.045
+best 388909	 iteration 42	 tours 1052	 time 1.370
+best 388728	 iteration 123	 tours 3077	 time 3.405
+best 387697	 iteration 275	 tours 6877	 time 7.253
+best 387190	 iteration 2722	 tours 68052	 time 69.125
+end try 23
+
+seed 553456027
+begin try 24 
+best 399266	 iteration 1	 tours 27	 time 0.327
+best 394154	 iteration 2	 tours 52	 time 0.355
+best 393230	 iteration 5	 tours 127	 time 0.434
+best 391714	 iteration 6	 tours 152	 time 0.461
+best 390318	 iteration 11	 tours 277	 time 0.589
+best 389163	 iteration 22	 tours 552	 time 0.870
+best 389016	 iteration 280	 tours 7002	 time 7.381
+best 388434	 iteration 518	 tours 12952	 time 13.324
+best 388373	 iteration 563	 tours 14077	 time 14.444
+best 388220	 iteration 619	 tours 15477	 time 15.849
+best 387998	 iteration 697	 tours 17427	 time 17.796
+best 386793	 iteration 803	 tours 20077	 time 20.447
+end try 24
+
+seed 2075655498
+begin try 25 
+best 397935	 iteration 1	 tours 27	 time 0.324
+best 393958	 iteration 2	 tours 52	 time 0.351
+best 392854	 iteration 3	 tours 77	 time 0.377
+best 392405	 iteration 5	 tours 127	 time 0.430
+best 391583	 iteration 6	 tours 152	 time 0.456
+best 389841	 iteration 12	 tours 302	 time 0.609
+best 389780	 iteration 70	 tours 1752	 time 2.060
+best 389595	 iteration 124	 tours 3102	 time 3.413
+best 388520	 iteration 205	 tours 5127	 time 5.430
+best 388456	 iteration 231	 tours 5777	 time 6.078
+best 387939	 iteration 474	 tours 11852	 time 12.182
+best 387306	 iteration 478	 tours 11952	 time 12.282
+end try 25
+
+seed 1935138784
+begin try 26 
+best 394518	 iteration 1	 tours 27	 time 0.324
+best 392325	 iteration 2	 tours 52	 time 0.351
+best 390717	 iteration 7	 tours 177	 time 0.479
+best 390455	 iteration 14	 tours 352	 time 0.655
+best 390377	 iteration 33	 tours 827	 time 1.129
+best 389611	 iteration 54	 tours 1352	 time 1.655
+best 389335	 iteration 55	 tours 1377	 time 1.680
+best 388930	 iteration 831	 tours 20777	 time 21.275
+best 388009	 iteration 960	 tours 24002	 time 24.524
+best 387640	 iteration 2809	 tours 70227	 time 70.939
+best 387045	 iteration 5116	 tours 127902	 time 129.022
+end try 26
+
+seed 886584553
+begin try 27 
+best 398286	 iteration 1	 tours 27	 time 0.326
+best 392468	 iteration 2	 tours 52	 time 0.353
+best 391700	 iteration 5	 tours 127	 time 0.431
+best 390589	 iteration 12	 tours 302	 time 0.609
+best 389503	 iteration 40	 tours 1002	 time 1.315
+best 389265	 iteration 117	 tours 2927	 time 3.239
+best 388366	 iteration 149	 tours 3727	 time 4.036
+best 388158	 iteration 858	 tours 21452	 time 21.894
+best 388115	 iteration 913	 tours 22827	 time 23.279
+best 387699	 iteration 1425	 tours 35627	 time 36.137
+best 387638	 iteration 1984	 tours 49602	 time 50.094
+best 387292	 iteration 2554	 tours 63852	 time 64.377
+end try 27
+
+seed 858589342
+begin try 28 
+best 399568	 iteration 1	 tours 27	 time 0.326
+best 393925	 iteration 2	 tours 52	 time 0.354
+best 393316	 iteration 4	 tours 102	 time 0.407
+best 392546	 iteration 5	 tours 127	 time 0.433
+best 391907	 iteration 9	 tours 227	 time 0.536
+best 391816	 iteration 10	 tours 252	 time 0.561
+best 391701	 iteration 12	 tours 302	 time 0.613
+best 391353	 iteration 21	 tours 527	 time 0.840
+best 390057	 iteration 24	 tours 602	 time 0.916
+best 389603	 iteration 33	 tours 827	 time 1.141
+best 389548	 iteration 76	 tours 1902	 time 2.212
+best 389300	 iteration 81	 tours 2027	 time 2.337
+best 388472	 iteration 113	 tours 2827	 time 3.137
+best 388315	 iteration 818	 tours 20452	 time 20.770
+best 387352	 iteration 1663	 tours 41577	 time 41.763
+end try 28
+
+seed 586951401
+begin try 29 
+best 398193	 iteration 1	 tours 27	 time 0.325
+best 395483	 iteration 2	 tours 52	 time 0.352
+best 393597	 iteration 4	 tours 102	 time 0.405
+best 392341	 iteration 6	 tours 152	 time 0.456
+best 391950	 iteration 7	 tours 177	 time 0.482
+best 391898	 iteration 9	 tours 227	 time 0.534
+best 389663	 iteration 10	 tours 252	 time 0.559
+best 389378	 iteration 33	 tours 827	 time 1.134
+best 387746	 iteration 153	 tours 3827	 time 4.100
+best 387461	 iteration 1421	 tours 35527	 time 35.601
+end try 29
+
+seed 560659458
+begin try 30 
+best 398559	 iteration 1	 tours 27	 time 0.326
+best 396055	 iteration 2	 tours 52	 time 0.353
+best 392849	 iteration 3	 tours 77	 time 0.379
+best 392518	 iteration 6	 tours 152	 time 0.457
+best 391154	 iteration 8	 tours 202	 time 0.509
+best 390961	 iteration 12	 tours 302	 time 0.611
+best 389626	 iteration 23	 tours 577	 time 0.887
+best 389225	 iteration 35	 tours 877	 time 1.186
+best 389224	 iteration 128	 tours 3202	 time 3.483
+best 388845	 iteration 188	 tours 4702	 time 4.963
+best 388582	 iteration 631	 tours 15777	 time 16.032
+best 388367	 iteration 986	 tours 24652	 time 24.937
+best 387977	 iteration 1016	 tours 25402	 time 25.693
+best 387736	 iteration 2253	 tours 56327	 time 56.651
+best 387171	 iteration 2495	 tours 62377	 time 62.692
+end try 30
+
+seed 1390013023
+begin try 31 
+best 397228	 iteration 1	 tours 27	 time 0.326
+best 394780	 iteration 2	 tours 52	 time 0.353
+best 394076	 iteration 3	 tours 77	 time 0.379
+best 392626	 iteration 4	 tours 102	 time 0.405
+best 391775	 iteration 5	 tours 127	 time 0.431
+best 391589	 iteration 7	 tours 177	 time 0.483
+best 390325	 iteration 9	 tours 227	 time 0.535
+best 389329	 iteration 50	 tours 1252	 time 1.557
+best 389083	 iteration 134	 tours 3352	 time 3.636
+best 388424	 iteration 174	 tours 4352	 time 4.629
+best 388356	 iteration 238	 tours 5952	 time 6.211
+best 387846	 iteration 493	 tours 12327	 time 12.582
+best 387372	 iteration 777	 tours 19427	 time 19.647
+end try 31
+
+seed 2021879978
+begin try 32 
+best 397646	 iteration 1	 tours 27	 time 0.326
+best 394925	 iteration 2	 tours 52	 time 0.353
+best 392395	 iteration 3	 tours 77	 time 0.380
+best 390488	 iteration 4	 tours 102	 time 0.406
+best 389277	 iteration 14	 tours 352	 time 0.662
+best 387555	 iteration 115	 tours 2877	 time 3.192
+best 387298	 iteration 193	 tours 4827	 time 5.129
+end try 32
+
+seed 1435622615
+begin try 33 
+best 399229	 iteration 1	 tours 27	 time 0.326
+best 394956	 iteration 2	 tours 52	 time 0.353
+best 393284	 iteration 3	 tours 77	 time 0.380
+best 391129	 iteration 5	 tours 127	 time 0.432
+best 390892	 iteration 8	 tours 202	 time 0.508
+best 389544	 iteration 21	 tours 527	 time 0.837
+best 389383	 iteration 33	 tours 827	 time 1.136
+best 389237	 iteration 81	 tours 2027	 time 2.333
+best 389219	 iteration 101	 tours 2527	 time 2.834
+best 388944	 iteration 138	 tours 3452	 time 3.759
+best 388201	 iteration 328	 tours 8202	 time 8.512
+best 387523	 iteration 868	 tours 21702	 time 22.059
+best 387281	 iteration 991	 tours 24777	 time 25.144
+end try 33
+
+seed 808706275
+begin try 34 
+best 397546	 iteration 1	 tours 27	 time 0.328
+best 395806	 iteration 2	 tours 52	 time 0.355
+best 393471	 iteration 3	 tours 77	 time 0.382
+best 392020	 iteration 4	 tours 102	 time 0.409
+best 390527	 iteration 12	 tours 302	 time 0.612
+best 390305	 iteration 24	 tours 602	 time 0.913
+best 389944	 iteration 37	 tours 927	 time 1.240
+best 389618	 iteration 48	 tours 1202	 time 1.519
+best 389323	 iteration 178	 tours 4452	 time 4.761
+best 389152	 iteration 336	 tours 8402	 time 8.727
+best 389081	 iteration 406	 tours 10152	 time 10.500
+best 388464	 iteration 423	 tours 10577	 time 10.926
+best 387808	 iteration 544	 tours 13602	 time 13.964
+best 387194	 iteration 4378	 tours 109452	 time 110.120
+end try 34
+
+seed 654791566
+begin try 35 
+best 399050	 iteration 1	 tours 27	 time 0.325
+best 394613	 iteration 2	 tours 52	 time 0.352
+best 392780	 iteration 3	 tours 77	 time 0.378
+best 392029	 iteration 5	 tours 127	 time 0.431
+best 392005	 iteration 9	 tours 227	 time 0.533
+best 391055	 iteration 10	 tours 252	 time 0.560
+best 389918	 iteration 17	 tours 427	 time 0.737
+best 389301	 iteration 35	 tours 877	 time 1.187
+best 387640	 iteration 82	 tours 2052	 time 2.359
+best 387509	 iteration 9515	 tours 237877	 time 239.570
+best 387227	 iteration 12383	 tours 309577	 time 311.415
+end try 35
+
+seed 915555831
+begin try 36 
+best 397847	 iteration 1	 tours 27	 time 0.327
+best 394925	 iteration 2	 tours 52	 time 0.354
+best 392647	 iteration 3	 tours 77	 time 0.381
+best 392260	 iteration 6	 tours 152	 time 0.459
+best 392121	 iteration 7	 tours 177	 time 0.485
+best 392078	 iteration 13	 tours 327	 time 0.638
+best 391486	 iteration 20	 tours 502	 time 0.814
+best 390178	 iteration 22	 tours 552	 time 0.865
+best 388929	 iteration 26	 tours 652	 time 0.967
+best 388503	 iteration 106	 tours 2652	 time 2.958
+best 387780	 iteration 1635	 tours 40877	 time 41.411
+best 387380	 iteration 4504	 tours 112602	 time 113.010
+end try 36
+
+seed 1382883233
+begin try 37 
+best 395999	 iteration 1	 tours 27	 time 0.329
+best 394365	 iteration 2	 tours 52	 time 0.357
+best 393180	 iteration 3	 tours 77	 time 0.383
+best 392347	 iteration 4	 tours 102	 time 0.409
+best 390497	 iteration 11	 tours 277	 time 0.588
+best 390148	 iteration 21	 tours 527	 time 0.838
+best 390003	 iteration 36	 tours 902	 time 1.213
+best 389017	 iteration 41	 tours 1027	 time 1.339
+best 388553	 iteration 48	 tours 1202	 time 1.513
+best 388421	 iteration 150	 tours 3752	 time 4.051
+best 388105	 iteration 811	 tours 20277	 time 20.531
+best 387513	 iteration 1948	 tours 48702	 time 49.010
+best 387225	 iteration 5324	 tours 133102	 time 133.989
+end try 37
+
+seed 1926673110
+begin try 38 
+best 398331	 iteration 1	 tours 27	 time 0.325
+best 394370	 iteration 2	 tours 52	 time 0.352
+best 393714	 iteration 3	 tours 77	 time 0.379
+best 393084	 iteration 4	 tours 102	 time 0.406
+best 391849	 iteration 9	 tours 227	 time 0.535
+best 391217	 iteration 10	 tours 252	 time 0.561
+best 391104	 iteration 24	 tours 602	 time 0.913
+best 390430	 iteration 33	 tours 827	 time 1.138
+best 390054	 iteration 36	 tours 902	 time 1.215
+best 390025	 iteration 42	 tours 1052	 time 1.368
+best 390020	 iteration 60	 tours 1502	 time 1.818
+best 389720	 iteration 64	 tours 1602	 time 1.921
+best 389306	 iteration 81	 tours 2027	 time 2.348
+best 389267	 iteration 102	 tours 2552	 time 2.877
+best 389035	 iteration 307	 tours 7677	 time 8.025
+best 388950	 iteration 369	 tours 9227	 time 9.591
+best 388683	 iteration 405	 tours 10127	 time 10.503
+best 387462	 iteration 683	 tours 17077	 time 17.530
+end try 38
+
+seed 1430730074
+begin try 39 
+best 394961	 iteration 1	 tours 27	 time 0.327
+best 393391	 iteration 3	 tours 77	 time 0.380
+best 392532	 iteration 7	 tours 177	 time 0.485
+best 391318	 iteration 10	 tours 252	 time 0.561
+best 389271	 iteration 15	 tours 377	 time 0.689
+best 389167	 iteration 301	 tours 7527	 time 7.896
+best 388855	 iteration 482	 tours 12052	 time 12.460
+best 388835	 iteration 526	 tours 13152	 time 13.572
+best 388142	 iteration 540	 tours 13502	 time 13.926
+best 388118	 iteration 942	 tours 23552	 time 24.064
+best 387795	 iteration 1048	 tours 26202	 time 26.734
+best 387210	 iteration 2251	 tours 56277	 time 56.765
+end try 39
+
+seed 439103057
+begin try 40 
+best 395910	 iteration 1	 tours 27	 time 0.328
+best 394691	 iteration 2	 tours 52	 time 0.355
+best 392617	 iteration 4	 tours 102	 time 0.407
+best 391635	 iteration 5	 tours 127	 time 0.433
+best 391605	 iteration 12	 tours 302	 time 0.612
+best 389804	 iteration 15	 tours 377	 time 0.689
+best 389524	 iteration 72	 tours 1802	 time 2.121
+best 389488	 iteration 127	 tours 3177	 time 3.506
+best 389168	 iteration 170	 tours 4252	 time 4.578
+best 388945	 iteration 177	 tours 4427	 time 4.754
+best 388940	 iteration 343	 tours 8577	 time 8.922
+best 388327	 iteration 358	 tours 8952	 time 9.299
+best 387412	 iteration 470	 tours 11752	 time 12.114
+end try 40
+
+seed 584096818
+begin try 41 
+best 396600	 iteration 1	 tours 27	 time 0.328
+best 392513	 iteration 2	 tours 52	 time 0.356
+best 392061	 iteration 5	 tours 127	 time 0.435
+best 390432	 iteration 12	 tours 302	 time 0.613
+best 389955	 iteration 24	 tours 602	 time 0.916
+best 388789	 iteration 38	 tours 952	 time 1.266
+best 388752	 iteration 340	 tours 8502	 time 8.848
+best 387827	 iteration 373	 tours 9327	 time 9.682
+best 387481	 iteration 3567	 tours 89177	 time 90.232
+end try 41
+
+seed 1607600780
+begin try 42 
+best 398206	 iteration 1	 tours 27	 time 0.327
+best 395852	 iteration 2	 tours 52	 time 0.354
+best 393789	 iteration 3	 tours 77	 time 0.381
+best 392414	 iteration 6	 tours 152	 time 0.460
+best 392242	 iteration 8	 tours 202	 time 0.513
+best 392051	 iteration 13	 tours 327	 time 0.641
+best 391326	 iteration 19	 tours 477	 time 0.794
+best 391175	 iteration 23	 tours 577	 time 0.896
+best 391132	 iteration 29	 tours 727	 time 1.050
+best 389745	 iteration 43	 tours 1077	 time 1.402
+best 389143	 iteration 70	 tours 1752	 time 2.082
+best 388520	 iteration 108	 tours 2702	 time 3.040
+best 388506	 iteration 216	 tours 5402	 time 5.731
+best 388422	 iteration 930	 tours 23252	 time 23.787
+best 388391	 iteration 1600	 tours 40002	 time 40.717
+best 388154	 iteration 1773	 tours 44327	 time 45.091
+best 388093	 iteration 2012	 tours 50302	 time 51.170
+best 388065	 iteration 3264	 tours 81602	 time 82.822
+best 387442	 iteration 3474	 tours 86852	 time 88.066
+end try 42
+
+seed 1709854916
+begin try 43 
+best 396272	 iteration 1	 tours 27	 time 0.325
+best 394447	 iteration 2	 tours 52	 time 0.352
+best 392898	 iteration 3	 tours 77	 time 0.378
+best 392506	 iteration 6	 tours 152	 time 0.457
+best 390185	 iteration 8	 tours 202	 time 0.509
+best 390141	 iteration 28	 tours 702	 time 1.010
+best 390030	 iteration 55	 tours 1377	 time 1.683
+best 389373	 iteration 119	 tours 2977	 time 3.278
+best 389023	 iteration 144	 tours 3602	 time 3.897
+best 388067	 iteration 151	 tours 3777	 time 4.069
+best 387890	 iteration 230	 tours 5752	 time 6.032
+best 386960	 iteration 524	 tours 13102	 time 13.364
+end try 43
+
+seed 737735036
+begin try 44 
+best 395975	 iteration 1	 tours 27	 time 0.325
+best 393901	 iteration 3	 tours 77	 time 0.379
+best 393272	 iteration 4	 tours 102	 time 0.406
+best 391989	 iteration 5	 tours 127	 time 0.432
+best 391081	 iteration 7	 tours 177	 time 0.483
+best 390871	 iteration 16	 tours 402	 time 0.712
+best 390804	 iteration 21	 tours 527	 time 0.837
+best 390340	 iteration 28	 tours 702	 time 1.013
+best 389830	 iteration 38	 tours 952	 time 1.264
+best 389042	 iteration 83	 tours 2077	 time 2.383
+best 388965	 iteration 97	 tours 2427	 time 2.732
+best 388963	 iteration 238	 tours 5952	 time 6.249
+best 388104	 iteration 387	 tours 9677	 time 9.982
+best 387400	 iteration 783	 tours 19577	 time 19.917
+end try 44
+
+seed 1591117742
+begin try 45 
+best 396397	 iteration 1	 tours 27	 time 0.326
+best 393765	 iteration 2	 tours 52	 time 0.353
+best 393358	 iteration 4	 tours 102	 time 0.405
+best 393131	 iteration 5	 tours 127	 time 0.431
+best 390817	 iteration 8	 tours 202	 time 0.509
+best 390620	 iteration 46	 tours 1152	 time 1.460
+best 390008	 iteration 53	 tours 1327	 time 1.636
+best 389783	 iteration 78	 tours 1952	 time 2.261
+best 389323	 iteration 133	 tours 3327	 time 3.630
+best 388802	 iteration 161	 tours 4027	 time 4.329
+best 388645	 iteration 315	 tours 7877	 time 8.185
+best 388180	 iteration 558	 tours 13952	 time 14.268
+best 387610	 iteration 632	 tours 15802	 time 16.113
+best 387110	 iteration 3206	 tours 80152	 time 80.209
+end try 45
+
+seed 258130136
+begin try 46 
+best 398709	 iteration 1	 tours 27	 time 0.324
+best 394965	 iteration 2	 tours 52	 time 0.352
+best 394295	 iteration 3	 tours 77	 time 0.378
+best 393950	 iteration 4	 tours 102	 time 0.404
+best 392215	 iteration 6	 tours 152	 time 0.456
+best 392021	 iteration 8	 tours 202	 time 0.508
+best 391370	 iteration 11	 tours 277	 time 0.586
+best 390023	 iteration 14	 tours 352	 time 0.662
+best 389789	 iteration 36	 tours 902	 time 1.217
+best 388995	 iteration 100	 tours 2502	 time 2.831
+best 388466	 iteration 180	 tours 4502	 time 4.840
+best 387622	 iteration 229	 tours 5727	 time 6.072
+best 387181	 iteration 1512	 tours 37802	 time 38.324
+end try 46
+
+seed 421989620
+begin try 47 
+best 395169	 iteration 1	 tours 27	 time 0.326
+best 392597	 iteration 2	 tours 52	 time 0.354
+best 392396	 iteration 5	 tours 127	 time 0.432
+best 390952	 iteration 6	 tours 152	 time 0.458
+best 390211	 iteration 20	 tours 502	 time 0.810
+best 390102	 iteration 65	 tours 1627	 time 1.932
+best 387714	 iteration 69	 tours 1727	 time 2.033
+best 387371	 iteration 468	 tours 11702	 time 11.988
+end try 47
+
+seed 1670567245
+begin try 48 
+best 397717	 iteration 1	 tours 27	 time 0.326
+best 394672	 iteration 2	 tours 52	 time 0.354
+best 394144	 iteration 3	 tours 77	 time 0.380
+best 392393	 iteration 5	 tours 127	 time 0.431
+best 391974	 iteration 8	 tours 202	 time 0.509
+best 391876	 iteration 14	 tours 352	 time 0.661
+best 391653	 iteration 18	 tours 452	 time 0.763
+best 391044	 iteration 30	 tours 752	 time 1.064
+best 390932	 iteration 37	 tours 927	 time 1.241
+best 390651	 iteration 38	 tours 952	 time 1.267
+best 390408	 iteration 54	 tours 1352	 time 1.671
+best 390285	 iteration 55	 tours 1377	 time 1.697
+best 388847	 iteration 60	 tours 1502	 time 1.824
+best 388789	 iteration 172	 tours 4302	 time 4.612
+best 388473	 iteration 208	 tours 5202	 time 5.512
+best 388366	 iteration 411	 tours 10277	 time 10.604
+best 388115	 iteration 528	 tours 13202	 time 13.533
+best 387987	 iteration 601	 tours 15027	 time 15.363
+best 386899	 iteration 804	 tours 20102	 time 20.429
+end try 48
+
+seed 2100346064
+begin try 49 
+best 395069	 iteration 1	 tours 27	 time 0.326
+best 394172	 iteration 2	 tours 52	 time 0.354
+best 393402	 iteration 5	 tours 127	 time 0.430
+best 393032	 iteration 6	 tours 152	 time 0.456
+best 392945	 iteration 7	 tours 177	 time 0.482
+best 392440	 iteration 11	 tours 277	 time 0.585
+best 391087	 iteration 14	 tours 352	 time 0.661
+best 390606	 iteration 23	 tours 577	 time 0.890
+best 389662	 iteration 39	 tours 977	 time 1.293
+best 389660	 iteration 44	 tours 1102	 time 1.419
+best 389234	 iteration 51	 tours 1277	 time 1.596
+best 389191	 iteration 96	 tours 2402	 time 2.713
+best 388132	 iteration 178	 tours 4452	 time 4.750
+best 387589	 iteration 453	 tours 11327	 time 11.634
+best 386916	 iteration 788	 tours 19702	 time 20.060
+end try 49
+
+end problem pr2392
