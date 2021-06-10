@@ -122,14 +122,14 @@ void BcastBestSolutionToColonies ( void )
      if (i == rank){
      	numBytes= 8*(n+1);
         memcpy(tour_best_ant, best_so_far_ant->tour, numBytes);
-        write_registro_antes(tour_best_ant, distanceOwn, best_so_far_ant->tour_length);
+       /* write_registro_antes(tour_best_ant, distanceOwn, best_so_far_ant->tour_length);*/
      }
          
      MPI_Bcast(tour_best_ant, n+1, MPI_LONG, i, MPI_COMM_WORLD);
      
      if (rank != i ){
         distanceForeing = compute_tour_length(tour_best_ant);
-        write_registro_despues(tour_best_ant, distanceForeing);
+        /*write_registro_despues(tour_best_ant, distanceForeing);*/
         
         foreign_solution_update_pheromone(tour_best_ant);
         
@@ -139,14 +139,14 @@ void BcastBestSolutionToColonies ( void )
            
            if (global_best_tour > distanceForeing){
            	global_best_tour = distanceForeing;
-           	write_best_global_tour(global_best_tour);
+           	/*write_best_global_tour(global_best_tour);*/
            }
            
         } else {
         
            if(distanceOwn < global_best_tour){
               global_best_tour = distanceOwn;
-              write_best_global_tour(global_best_tour);
+            /*  write_best_global_tour(global_best_tour);*/
            }
         }
      }

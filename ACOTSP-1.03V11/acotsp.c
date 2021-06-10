@@ -626,10 +626,13 @@ int main(int argc, char *argv[]) {
 	
         write_mpi_report();
 	exit_try(n_try);
+	printf("Media del tiempo que lleva construct_solutions %.10f seconds\n", totalTimeConstruct_solutions/iteration);
+	printf("Media del tiempo que lleva local_search %.10f seconds\n", totalTimeLocal_search/iteration);
+	write_measures(totalTimeConstruct_solutions/iteration, totalTimeLocal_search/iteration);
+	totalTimeConstruct_solutions = 0;
+	totalTimeLocal_search = 0;
     }
-    printf("Media del tiempo que lleva construct_solutions %.10f seconds\n", totalTimeConstruct_solutions/iteration);
-    printf("Media del tiempo que lleva local_search %.10f seconds\n", totalTimeLocal_search/iteration);
-    write_measures(totalTimeConstruct_solutions/iteration, totalTimeLocal_search/iteration);
+
     exit_program();
 
     free( instance.distance );
@@ -648,8 +651,6 @@ int main(int argc, char *argv[]) {
     free( best_so_far_ant->tour );
     free( best_so_far_ant->visited );
     free( prob_of_selection );
-    free( foreign_tour );
-    free( own_tour );
     
     /* Finalizamos los procesos */
     MPI_Finalize();
