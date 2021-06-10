@@ -1,30 +1,11 @@
-\chapter{Introducción}\label{cap:intro}
+2\chapter{Introducci\'on}\label{cap:intro}
 
-%% El \label se usa para etiquetar un capitulo (o seccion, o figura) y luego referenciarlo a lo largo del texto sin tener que poner explicitamente su numero.
+\section{Motivaci\'on}
+En la actualidad hay multitud de \'ambitos en los que los problemas NP-complejos cobran vital importancia y son estrat\'egicos para el sector. Dichos campos abarcan desde la optimizaci\'on combinatoria, bioinform\'atica, telecomunicaciones hasta la econom\'ia, ingenier\'ia software, etc...\\
+Tradicionalemente se utilizan dos enfoques principales para abordar estos problemas, los m\'etodos exactos y las metaheur\'isticas. Pese a que hoy en d\'ia las computadoras han evolucionado r\'apidamente y son capaces de procesar gran cantidad de operaciones por segundo, no se suele disponer de los recursos nescesarios, ya sean exigencias hardware como de tiempo, para resolver estos problemas empleando m\'etodos exactos. He aqu\'i el inter\'es de estudiar una metahur\'istica como es The Ant Colony Optimization method (ACO), con un \'exito especial, y tratar de incrementar las ventajas inherentes a las metaheur\'iticas paralelizando y consiguiendo soluciones de calidad en menos tiempo.
 
-\section{Secci\'on}
+\cite{libro1}
 
-\subsection{subapartado}
-
-\subsubsection{subsubapartado}
-
-\subsection*{subapartado sin numerar}
-
-Para poner en {\bf negrilla} o bien \textbf{negrilla}.
-
-Para poner en {\em cursiva} o bien \emph{cursiva}.
-
-Para referenciar algo que hemos etiquetado antes, como este capitulo \ref{cap:intro}.
-
-Para citar una fuente bibliografica \cite{libro1}. La bibliograf\'ia se introduce en el fichero biblio.bib. Hay que compilar este fichero para generar la bibliograf\'ia de la memoria.
-
-Para poner una figura:
-
-\begin{figure}[tbh]
-\begin{center}
-\includegraphics[width=0.9\textwidth]{imagenes/00.eps}
- \caption{Texto al pie de la figura.}
-\label{fig:nombre}
-\end{center}
-\end{figure}
+\section{Objetivos}\label{cap:objetivos}
+La finalidad de este TFG es analizar la estructura de los algotimos de optimizaci\'on combinatoria, como es el caso de ACO, para idear y estudiar las distintas posibilidades de paralelizaci\'on. Una vez implementadas las distintas propuestas paralelas se evaluar\'an los resultados, empleando el problema del viajante TSP. Poniendo en pr\'actica y ampliando, de esta manera, los conocimientos sobre la librer\'ia OpenMP y MPI. Adem\'as de conocer y utilizar un entorno HPC, que ser\'a donde se realizar\'an las pruebas.
 

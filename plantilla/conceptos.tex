@@ -1,0 +1,37 @@
+\chapter{Conceptos previos}\label{cap:conceptos}
+
+\section{Optimizaci\'on de la colonia de hormigas para el problema TSP}
+La optimizaci\'on de colonias de hormigas (ACO) es una metaheur\'istica en la que una colonia de hormigas coopera para encontrar buenas soluciones en problemas de dif\'icil optimizaci\'on. Una hormiga artificial en ACO es un procedimiento estoc\'astico que construye gradualmente una soluci\'on agregando elementos apropiados a la construcci\'on de la soluci\'on. Por lo tanto, la metaheur\'istica ACO se puede aplicar a problemas de optimizaci\'on combinatoria para los que se puede definir una heur\'istica constructiva.\\
+El problema del viajante (TSP) es uno de esos problemas, que consiste en encontrar el menor tiempo posible viaje de ida y vuelta a trav\'es de un determinado conjunto de ciudades. Se p uede representar mediante un gr\'afico \textit{G = (N, A)} con N el conjunto de nodos ciudades y A el conjunto de arcos que conectan completamente los nodos.Se asigna un peso \textit{d$_{i,j}$} a cada arco \textit{(i, j) $\in$ A}, que representa la distancia entre las ciudades \textit{i} y \textit{j}. El problema TSP intenta encontrar un circuito hamiltoniano de longitud m\'inima de la gr\'afica, donde un circuito hamiltoniano es un recorrido cerrado que visita cada nodo del gr\'afico solo una vez.\\
+El algoritmo 1 muestra el pseudoc\'odigo b\'asico de la mayor\'ia de los algoritmos ACO. Consta de tres procedimientos principales: ConstructAntsSolutions, LocalSearch y UpdatePheromones. ConstructAntsSolutions gestiona una colonia de hormigas artificiales que construyen progresivamente soluciones para el problema de optimizaci\'on mediante decisiones locales estoc\'asticas basado en rastros de feromonas e informaci\'on heur\'istica. Luego, un procedimiento de LocalSearch mejora los recorridos de las hormigas con alg\'un algoritmo de b\'usqueda local opcional. Y, finalmente, el procedimiento UpdatePheromone modifica los rastros de feromonas basado tanto en la evaluaci\'on de las nuevas soluciones como en un mecanismo de evaporaci\'on de feromonas.\\
+Se puede encontrar una gran cantidad de extensiones de este algoritmo ACO b\'asico en la literatura (una revisi\'on completa
+se puede encontrar en la Secci\'on 4). Se pueden clasificar en dos grandes grupos. Un primer grupo est\'a formado por propuestas que
+mantener el mismo procedimiento de construcci\'on de la soluci\'on, e introducir las diferencias con el algoritmo b\'asico en el
+la gesti\'on de los rastros de feromonas y la forma en que se lleva a cabo la actualizaci\'on de las feromonas. Un segundo grupo comprende
+las propuestas que modifican la forma de construcci\'on de las soluciones, as\'i como aquellas que modifican m\'as profundamente la
+estructura del algoritmo b\'asico o sus caracter\'isticas. Las propuestas paralelas presentadas en este trabajo son v\'alidas y han sido
+probadas con algoritmos del primer grupo, aunque las ideas generales expresadas aqu\'i podr\'ian extenderse f\'acilmente a
+algoritmos del segundo grupo tambi\'en.
+En el resto de esta secci\'on se explican los tres procedimientos b\'asicos de la metaheur\'istica ACO, utilizados como base en el paralelo
+implementaci\'on propuesta en este trabajo, se describen en profundidad para su uso en la soluci\'on del problema TSP.
+%insertar imagen estructura pseudocodigo
+\subsection{Soluciones de las hormigas}
+A cada hormiga individual se le asigna una ciudad de partida a la que regresar\'a despu\'es de recorrer el resto de ciudades. Se trata de un circuito hamiltoniano. Para decidir la siguiente ciudad a la que ir se utiliza la siguiente regla de trasici\'on probabil\'istica, que depende tanto de las feromonas como de los valores heur\'isticos:\\
+%insertar formula
+donde \textit{N$^{k}_{i}$} es el conjunto de las ciudades que todav\'ia no visitadas por la hormiga \textit{k}, \textit{$\mathcal{T}_{ij}$} representa la conveniencia de visitar la ciudad \textit{j} a continuaci\'on de la ciudad \textit{i}. Esta conveniencia se obtiene de las feromonas, \textit{$\mathcal{n}_{ij}$} se suele establecer como la inversa a la distancia \textit{d$_{i,j}$} entre las ciudades. Los par\'ametros \textit{$\alpha$} y \textit{$\beta$} son clave en la construcci\'on de la soluci\'on. El par\'ametro \textit{$\alpha$} establece la cantidad fe feromonas en los bordes, que desaparecer\'ia en cada iteraci\'on. El para\'ametro \textit{$\beta$} establece la importancia relativa de la feromona frente al valor heur\'istico.\\
+\subsection{B\'usqueda Local}
+El pseudoc\'odigo ofrece la posibilidad de aplicar una de las rutinas propuestas de b\'usqueda local. Dicha b\'usqueda local se realizar\'ia una vez que las hormigas terminasen de construir la soluci\'on. En la implementaci\'on paralela propuesta se utiliza uno de los procedimientos de b\'usqueda local m\'as populares, el \textit{3-opt}. Dicho procedimiento consiste en eliminar tres bordes en un recorrido, dividi\'endolo en tres caminos, y luego volver a conectar estos caminos de otra manera y seleccionar la mejor opci\'on. El \textit{3-opt} contin\'ua aplicando el procedimiento hasta que no se pueden encontrar mejoras y el recorrido es \textit{3-\'optimo}. La Figura 1 muestra las 8 posibilidades de reconexi\'on diferentes eliminando 3 bordes.\\
+La combinaci\'on de la construcci\'on de soluciones con la b\'usqueda local logra un buen equilibrio entre exploraci\'on y explotaci\'on, que es el n\'ucleo de la metaheur\'istica moderna (8).\\
+\subsection{Actualizaci\'on de feromonas}
+En este procedimiento se modifican los rastros de feromonas, aumentando sus valores cuando las hormigas depositan feromonas en recorridos prometedores para guiar a otras hormigas en la construcci\'on de nuevas soluciones, o disminuir sus valores debido a la evaporaci\'on de feromonas para evitar la acumulaci\'on ilimitada de rastros de feromonas y tambi\'en para permitir que se olviden las malas decisiones.
+El proceso de evaporaci\'on evita que el algoritmo converja prematuramente a regiones sub\'optimas y de que se quede atascado en un \'optimo local, al disminuir $\mathcal{T}$ a una tasa constante $\rho$ (la tasa de evaporaci\'on de feromonas):\\
+%insertar formula
+Posteriormente las hormigas depositan feromonas en los arcos que atravesaron:\\
+%insertar formula
+donde \textit{m} es el n\'umero de hormigas y \textit{$\Delta\mathcal{T}^{k}_{ij}$} es la cantidad de feromonas \textit{k} depositadas por las hormigas en los arcos que visitaron, definido
+como:
+%insertar formula
+donde \textit{$C^{k}$} es la longitud del recorrido \textit{$T^{k}$} construido por una hormiga \textit{k}.
+Como se muestra en la regla de transici\'on probabil\'istica, la posibilidad de que una hormiga visite una ciudad j justo despu\'es de i aumenta con la
+rastro de feromonas. Por lo tanto, es en la implementaci\'on de este procedimiento es el que origina muchas variantes del algoritmo ACO.
+
