@@ -1,0 +1,85 @@
+
+Parameter-settings: 
+
+max_tries		 50
+max_tours		 0
+max_time		 1000.00
+seed		 1623350346
+optimum			 387500
+n_ants			 25
+nn_ants			 20
+alpha			 1.00
+beta			 2.00
+rho			 0.50
+q_0			 0.00
+elitist_ants		 25
+ras_ranks		 0
+ls_flag			 3
+nn_ls			 20
+dlb_flag		 1
+as_flag			 0
+eas_flag		 1
+ras_flag		 0
+mmas_flag		 0
+bwas_flag		 0
+acs_flag		 0
+
+Best: 387668	 Iterations:    675	 B-Fac 1.55518	 Time 14.69	 Tot.time 27.35
+Best: 387890	 Iterations:    135	 B-Fac 1.55916	 Time 3.20	 Tot.time 15.76
+Best: 387407	 Iterations:   1187	 B-Fac 1.56480	 Time 26.20	 Tot.time 26.22
+Best: 387394	 Iterations:   2736	 B-Fac 1.58089	 Time 59.86	 Tot.time 59.88
+Best: 387348	 Iterations:   1236	 B-Fac 1.56020	 Time 26.95	 Tot.time 26.97
+Best: 386861	 Iterations:    402	 B-Fac 1.57316	 Time 8.96	 Tot.time 8.98
+Best: 387597	 Iterations:    681	 B-Fac 1.57044	 Time 14.99	 Tot.time 30.84
+Best: 387313	 Iterations:   4884	 B-Fac 1.59093	 Time 106.41	 Tot.time 106.43
+Best: 388918	 Iterations:    141	 B-Fac 1.57880	 Time 3.33	 Tot.time 3.86
+Best: 387590	 Iterations:   2487	 B-Fac 1.56271	 Time 54.02	 Tot.time 57.15
+Best: 388102	 Iterations:    564	 B-Fac 1.59156	 Time 12.55	 Tot.time 29.31
+Best: 387207	 Iterations:    433	 B-Fac 1.57462	 Time 9.60	 Tot.time 9.62
+Best: 386603	 Iterations:   1693	 B-Fac 1.57630	 Time 37.18	 Tot.time 37.19
+Best: 387624	 Iterations:    547	 B-Fac 1.57504	 Time 12.10	 Tot.time 13.27
+Best: 388303	 Iterations:    780	 B-Fac 1.58717	 Time 17.29	 Tot.time 23.09
+Best: 387453	 Iterations:    552	 B-Fac 1.58612	 Time 12.22	 Tot.time 12.24
+Best: 387026	 Iterations:    783	 B-Fac 1.56647	 Time 17.18	 Tot.time 17.19
+Best: 387958	 Iterations:    877	 B-Fac 1.56710	 Time 19.29	 Tot.time 34.89
+Best: 387178	 Iterations:    701	 B-Fac 1.56396	 Time 15.43	 Tot.time 15.44
+Best: 387396	 Iterations:   1641	 B-Fac 1.57212	 Time 36.00	 Tot.time 36.00
+Best: 388263	 Iterations:     83	 B-Fac 1.56710	 Time 2.10	 Tot.time 7.03
+Best: 387294	 Iterations:   1882	 B-Fac 1.57358	 Time 40.78	 Tot.time 40.79
+Best: 388492	 Iterations:     84	 B-Fac 1.59490	 Time 2.12	 Tot.time 4.16
+Best: 387889	 Iterations:    484	 B-Fac 1.57023	 Time 10.67	 Tot.time 15.26
+Best: 386441	 Iterations:    754	 B-Fac 1.55518	 Time 16.45	 Tot.time 16.46
+Best: 387169	 Iterations:    839	 B-Fac 1.57734	 Time 18.40	 Tot.time 18.40
+Best: 388195	 Iterations:    369	 B-Fac 1.58048	 Time 8.25	 Tot.time 9.77
+Best: 387349	 Iterations:   3020	 B-Fac 1.57943	 Time 66.37	 Tot.time 66.38
+Best: 387799	 Iterations:   1533	 B-Fac 1.57337	 Time 33.66	 Tot.time 266.19
+Best: 388331	 Iterations:    251	 B-Fac 1.56605	 Time 5.70	 Tot.time 7.05
+Best: 387490	 Iterations:   1842	 B-Fac 1.57525	 Time 40.23	 Tot.time 40.23
+Best: 387298	 Iterations:    930	 B-Fac 1.57379	 Time 20.44	 Tot.time 20.45
+Best: 389276	 Iterations:     87	 B-Fac 1.63253	 Time 2.20	 Tot.time 8.14
+Best: 386816	 Iterations:    520	 B-Fac 1.58027	 Time 11.49	 Tot.time 11.51
+Best: 387185	 Iterations:   1510	 B-Fac 1.56564	 Time 32.91	 Tot.time 32.91
+Best: 388029	 Iterations:    708	 B-Fac 1.55205	 Time 15.54	 Tot.time 16.26
+Best: 387496	 Iterations:    539	 B-Fac 1.55560	 Time 11.96	 Tot.time 11.96
+Best: 387728	 Iterations:    629	 B-Fac 1.56626	 Time 13.85	 Tot.time 36.51
+Best: 388201	 Iterations:     57	 B-Fac 1.56041	 Time 1.54	 Tot.time 7.40
+Best: 388837	 Iterations:     99	 B-Fac 1.56145	 Time 2.44	 Tot.time 3.13
+Best: 391288	 Iterations:      5	 B-Fac 1.73683	 Time 0.42	 Tot.time 0.84
+Best: 387633	 Iterations:    655	 B-Fac 1.56710	 Time 14.41	 Tot.time 47.77
+Best: 388204	 Iterations:    555	 B-Fac 1.57734	 Time 12.31	 Tot.time 32.46
+Best: 387205	 Iterations:    865	 B-Fac 1.56417	 Time 18.86	 Tot.time 18.86
+Best: 387917	 Iterations:   3379	 B-Fac 1.58110	 Time 73.76	 Tot.time 93.74
+Best: 388125	 Iterations:    242	 B-Fac 1.56543	 Time 5.48	 Tot.time 15.19
+Best: 386717	 Iterations:   1123	 B-Fac 1.56187	 Time 24.64	 Tot.time 24.64
+Best: 387322	 Iterations:   2632	 B-Fac 1.57839	 Time 57.32	 Tot.time 57.32
+Best: 387663	 Iterations:    222	 B-Fac 1.58612	 Time 5.10	 Tot.time 7.71
+Best: 386894	 Iterations:   2002	 B-Fac 1.56856	 Time 43.57	 Tot.time 43.58
+
+Average-Best: 387707.64	 Average-Iterations: 1020.70
+Stddev-Best: 785.14 	 Stddev Iterations: 995.86
+Best try: 386441		 Worst try: 391288
+
+Avg.time-best: 22.41 stddev.time-best: 21.65
+
+Avg.time-total: 31.48 stddev.time-total: 40.41
+ excess best = -0.002733, excess average = 0.000536, excess worst = 0.009775
