@@ -103,7 +103,7 @@ void construct_solutions( void )
     TRACE ( printf("construct solutions for all ants\n"); );
 
     time1=elapsed_time(REAL);
-    #pragma omp parallel for private(step)
+    #pragma omp parallel for private(step) schedule(dynamic,10)
     for ( k = 0 ; k < n_ants ; k++) {
         step=0;
         /* Mark all cities as unvisited */
@@ -216,7 +216,7 @@ void local_search( void )
     TRACE ( printf("apply local search to all ants\n"); );
 
     time1=elapsed_time(REAL);
-    #pragma omp parallel for
+    #pragma omp parallel for schedule(dynamic,10)
     for ( k = 0 ; k < n_ants ; k++ ) {
 	switch (ls_flag) {
         case 1:
