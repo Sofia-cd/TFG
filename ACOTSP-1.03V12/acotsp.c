@@ -83,7 +83,7 @@ long int termination_condition( void )
   listenColonies();
   
   return ( ((n_tours >= max_tours) && (elapsed_time( REAL ) >= max_time)) || 
-	  (best_so_far_ant->tour_length <= optimal) || (global_best_tour <= optimal)); 
+	  	(global_best_tour <= optimal)); 
 }
 
 
