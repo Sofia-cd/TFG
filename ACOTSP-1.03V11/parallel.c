@@ -129,7 +129,7 @@ void BcastBestSolutionToColonies ( void )
      
      if (rank != i ){
         distanceForeing = compute_tour_length(tour_best_ant);
-        write_registro_despues(tour_best_ant, distanceForeing);
+        /*write_registro_despues(tour_best_ant, distanceForeing);*/
         
         foreign_solution_update_pheromone(tour_best_ant);
         

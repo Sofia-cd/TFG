@@ -198,6 +198,7 @@ void sendBestSolutionToColonies ( void )
 	memcpy(own_tour, best_so_far_ant->tour, numBytes);
         
 	/*write_registro_antes(own_tour, best_so_far_ant->tour_length);*/
+	
 	for(i=0; i<numprocs; i++){
 		if(i != rank)
 			MPI_Isend(own_tour, n+1, MPI_LONG, i, 2000, MPI_COMM_WORLD, &request);
