@@ -139,7 +139,7 @@ void BcastBestSolutionToColonies ( void )
            
            if (global_best_tour > distanceForeing){
            	global_best_tour = distanceForeing;
-           	write_best_global_tour(global_best_tour);
+             /*write_best_global_tour(global_best_tour);*/
            }
            
         } else {
