@@ -129,7 +129,7 @@ void BcastBestSolutionToColonies ( void )
      
      if (rank != i ){
         distanceForeing = compute_tour_length(tour_best_ant);
-        /*write_registro_despues(tour_best_ant, distanceForeing);*/
+        write_registro_despues(tour_best_ant, distanceForeing);
         
         foreign_solution_update_pheromone(tour_best_ant);
         
@@ -139,7 +139,7 @@ void BcastBestSolutionToColonies ( void )
            
            if (global_best_tour > distanceForeing){
            	global_best_tour = distanceForeing;
-           	/*write_best_global_tour(global_best_tour);*/
+           	write_best_global_tour(global_best_tour);
            }
            
         } else {
