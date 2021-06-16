@@ -221,7 +221,7 @@ void listenColonies( void )
   
 	distanceOwn = best_so_far_ant->tour_length;
   
-	if( distanceOwn < INFTY){
+	/*if( distanceOwn < INFTY){
 		numBytes= 8*(n+1);
        	memcpy(own_tour, best_so_far_ant->tour, numBytes);
   
@@ -229,7 +229,7 @@ void listenColonies( void )
           		global_best_tour = distanceOwn;
           		write_best_global_tour(global_best_tour);
        	}
-	}
+	}*/
   
 	ready = 1;
   	
@@ -256,7 +256,7 @@ void listenColonies( void )
              
 						if (global_best_tour > distanceForeing){
 							global_best_tour = distanceForeing;
-							write_best_global_tour(global_best_tour);
+							/*write_best_global_tour(global_best_tour);*/
 						}
 					}
            

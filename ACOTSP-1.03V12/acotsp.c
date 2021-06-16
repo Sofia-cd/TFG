@@ -282,7 +282,10 @@ void update_statistics( void )
 	    }
 	}
 	write_report();
-	sendBestSolutionToColonies();
+	if(best_so_far_ant->tour_length < global_best_tour){
+		global_best_tour=best_so_far_ant->tour_length;
+		sendBestSolutionToColonies();
+	}
     }
     if ( ant[iteration_best_ant].tour_length < restart_best_ant->tour_length ) {
 	copy_from_to( &ant[iteration_best_ant], restart_best_ant );
