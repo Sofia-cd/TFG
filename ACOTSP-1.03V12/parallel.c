@@ -197,7 +197,7 @@ void sendBestSolutionToColonies ( void )
 	numBytes= 8*(n+1);
 	memcpy(own_tour, best_so_far_ant->tour, numBytes);
         
-	/*write_registro_antes(own_tour, best_so_far_ant->tour_length);*/
+	write_registro_antes(own_tour, best_so_far_ant->tour_length);
 	
 	for(i=0; i<numprocs; i++){
 		if(i != rank)
@@ -244,7 +244,7 @@ void listenColonies( void )
   	   
 					distanceForeing = compute_tour_length(foreign_tours[i].foreign_tour);
 					
-					/*write_registro_despues(foreign_tours[i].foreign_tour, distanceForeing);*/
+					write_registro_despues(foreign_tours[i].foreign_tour, distanceForeing);
   	   
 					foreign_solution_update_pheromone(foreign_tours[i].foreign_tour);
         	
@@ -256,7 +256,7 @@ void listenColonies( void )
              
 						if (global_best_tour > distanceForeing){
 							global_best_tour = distanceForeing;
-							/*write_best_global_tour(global_best_tour);*/
+							write_best_global_tour(global_best_tour);
 						}
 					}
            
