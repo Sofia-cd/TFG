@@ -61,7 +61,7 @@ void write_mpi_report ( void )
          MPI_Recv(&b_fact,1,MPI_DOUBLE,i,3,MPI_COMM_WORLD,&status);
          MPI_Recv(&time,1,MPI_DOUBLE,i,4,MPI_COMM_WORLD,&status);
          
-         if(tour_l <= best_tour_length && time < best_time){
+         if((tour_l <= best_tour_length && time < best_time)||(best_tour_length >= INFTY)){
             rankSource = i;
             best_tour_length = tour_l;
             best_iterations = iterations;
